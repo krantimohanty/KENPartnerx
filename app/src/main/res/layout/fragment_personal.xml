@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_marginTop="42dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/personal_Information"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/blue"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp"
+                app:contentPadding="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/profilepic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/grey"-->
+                    <!--android:scaleType="fitXY" />-->
+                <ImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/com_facebook_profile_picture_blank_square"
+                    android:background="@color/light_grey"
+                    android:padding="5dp"
+                    android:scaleType="fitXY" />
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="2dp"
+                    android:background="#60000000"
+                    android:fontFamily="san-serif"
+                    android:gravity="center"
+                    android:text="{ic-edit-pic 18sp}"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/name_applicant"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Applicant Name"
+                android:textColorHint="@color/dark_grey"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="@dimen/text_large_head" />
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/darkred"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/name_guardian"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColorHint="@color/dark_grey"
+                android:hint="Guardian Name"
+                android:inputType="text"
+                android:textSize="@dimen/text_large_head" />
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/darkred"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/name_mother"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Mother's Maiden Name"
+                android:inputType="text"
+                android:textColorHint="@color/dark_grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_large_head" />
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/darkred"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/dob"
+                android:drawableRight="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Date of Birth"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="text"
+                android:textColorHint="@color/dark_grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_large_head"/>
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/darkred"/>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Marital Status"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_large_head"/>
+                <RadioGroup
+                    android:id="@+id/marital_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/married"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_weight="0.40"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/dark_grey"
+                        android:text="Married"
+                        android:textSize="@dimen/text_large_head" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:layout_weight="0.60"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Single"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_large_head" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/darkred"/>
+
+            </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="20dp">
+                <TextView
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkred"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Nationality"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_large_head"/>
+                <RadioGroup
+                    android:id="@+id/nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="25dp"
+                    android:weightSum="1"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="17dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/indian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_weight="0.40"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/dark_grey"
+                        android:text="Indian"
+                        android:textSize="@dimen/text_large_head" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/nri"
+                        android:layout_weight="0.55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="NRI"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_large_head" />
+                </RadioGroup>
+            </LinearLayout>
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                >
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkred"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Gender"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_large_head"/>
+                <RadioGroup
+
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/dark_grey"
+                        android:text="Male"
+                        android:layout_weight="0.50"
+                        android:textSize="@dimen/text_large_head" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Female"
+                        android:layout_weight=".50"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_large_head" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+</RelativeLayout>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/darkred"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/email"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email Id"
+                android:background="@drawable/edt_bg_selector"
+                android:drawablePadding="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/dark_grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_large_head"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:background="@drawable/mybutton"
+                    android:layout_weight="0.50"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/next"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:background="@drawable/mybutton"
+                    android:layout_weight="0.50" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

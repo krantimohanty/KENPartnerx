@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".HomeActivity">
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:contentInsetLeft="0dp"
+        app:elevation="6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+<!--<ImageView-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:src="@drawable/kencloud_oldy"/>-->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:padding="2dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:id="@+id/userLoggedIn"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi !! "
+                android:layout_gravity="right"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:padding="2dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:id="@+id/toolbar_title" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+      >
+
+    <LinearLayout
+        android:id="@+id/aboutUs"
+        android:layout_width="145dp"
+        android:layout_height="155dp"
+        android:orientation="vertical"
+        android:background="@color/semi_transparent_color_white">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/about_img"
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/about_us"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_dark"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="About Us"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="28dp"
+            android:id="@+id/FAQ"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
+            android:layout_toRightOf="@+id/aboutUs"
+            android:orientation="vertical"
+            android:background="@color/semi_transparent_color_white">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/partner_img"
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/faqs"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_dark"
+                android:fontFamily="sans-serif"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="FAQs"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/aboutUs"
+            android:layout_marginTop="30dp"
+            android:id="@+id/partnership_form"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
+            android:orientation="vertical"
+            android:background="@color/semi_transparent_color_white">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/form_img"
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/partner_form"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_dark"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Register Now"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_toRightOf="@id/partnership_form"
+            android:layout_marginLeft="28dp"
+            android:id="@+id/feedback"
+            android:layout_width="145dp"
+            android:layout_below="@id/FAQ"
+            android:layout_height="155dp"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="@color/semi_transparent_color_white">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/profile_img"
+                android:layout_gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/feedback"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_dark"
+                android:fontFamily="sans-serif"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Feedback"/>
+
+        </LinearLayout>
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

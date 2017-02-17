@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/user"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Personal"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/company"
+        android:enabled="true"
+        android:icon="@drawable/company_icon"
+        android:title="Company"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bank_details"
+        android:enabled="true"
+        android:icon="@drawable/bankdetails"
+        android:title="Bank Details"
+        app:showAsAction="ifRoom" />
+</menu>

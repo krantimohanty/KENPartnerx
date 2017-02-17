@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bank_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kencloud.partner.user.BankDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Bank Details for all transactions and refunds"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name of the Bank"
+        android:background="@drawable/edt_bg_selector"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="16dp"
+        android:fontFamily="san-serif"
+        android:inputType="text"
+        android:textColorHint="@color/grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Branch"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Branch Adress"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="IFSC Code"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="MICR Code"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Account No."
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Operational Choices"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Please provide three choices of cities that you like to operate in"
+            android:textSize="16dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/dark_grey"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Choice 1"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Choice 1"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Choice 1"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="san-serif"
+            android:inputType="text"
+            android:textColorHint="@color/grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Pay Now"
+            android:textColor="@color/white"
+            android:background="@drawable/mybutton"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

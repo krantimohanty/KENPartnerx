@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTiles">#FF0099CC</color>
+    <color name="colorPrimary">#7CB342</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FF0099CC</color>
+    <color name="bg_button_login">#0d70e0</color>
+    <color name="light_green">#7CB342</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0d70e0</color>
+    <color name="dark_grey">#616161</color>
+    <color name="grey">#66000000</color>
+    <color name="tab_border">#a7a7aa</color>
+    <color name="tab_background">#f6f6f7</color>
+    <color name="darkred">#FFCC0000</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="orange">#FFA500</color>
+    <color name="semi_trasparent_orange">#70FFA500</color>
+    <color name="dark_orange">#FF6600</color>
+    <color name="semi_trasparent_dark_orange">#70FF6600</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#2278d4</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#d1395c</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#93c6fd</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#f98da5</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="transparentWhite">#FFFFFFFF</color>
+    <color name="semi_transparent_color_blue">#700d70e0</color>
+    <color name="color_dark">#212121</color>
+    <color name="transparent_color_dark">#70212121</color>
+    <color name="semi_transparent_color_cyan">#702196F3</color>
+    <color name="semi_transparent_color_white">#70ffffff</color>
+    <color name="light_grey">#FFDDDDDD</color>
+    <color name="black">#323232</color>
+    <color name="semi_transparent_menu_activity_text_color">#70323232</color>
+
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':gravitysnaphelper', ':library', ':sqljdbc4-2.0'

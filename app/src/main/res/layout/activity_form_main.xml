@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_form_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kencloud.partner.user.FormMainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:contentInsetLeft="0dp"
+        app:elevation="6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Partner Application Form - 13567"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+         >
+
+    <android.support.v7.widget.AppCompatTextView
+    android:id="@+id/text"
+        android:layout_marginLeft="30dp"
+        android:textSize="22dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/KPApplicationAddressInformation"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:background="@drawable/editext_background"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@drawable/editext_background"
+                    android:padding="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_user_big"/>
+                <TextView
+                    android:id="@+id/individual"
+                    android:padding="4dp"
+                    android:textAlignment="center"
+                   android:textSize="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Individual"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginLeft="30dp"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:text="or as a"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:background="@drawable/editext_background"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:background="@drawable/editext_background"
+                    android:padding="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/company_icon_big"/>
+                <TextView
+                    android:id="@+id/company"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company"/>
+            </LinearLayout>
+    <!--<RadioGroup-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:id="@+id/radioCatagory"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" >-->
+
+    <!--<RadioButton-->
+    <!--android:textColor="@color/dark_grey"-->
+    <!--android:layout_marginRight="40dp"-->
+    <!--android:id="@+id/radioIndividual"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/individual"-->
+<!--android:drawableLeft="@drawable/ic_user"-->
+        <!--android:drawablePadding="3dp"-->
+        <!--android:textSize="16dp"-->
+      <!--/>-->
+
+    <!--<RadioButton-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:drawableLeft="@drawable/company_icon"-->
+        <!--android:drawablePadding="3dp"-->
+        <!--android:textSize="16dp"-->
+    <!--android:textColor="@color/dark_grey"-->
+    <!--android:id="@+id/radioCompany"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/company"-->
+     <!--/>-->
+
+    <!--</RadioGroup>-->
+<!--<android.support.v7.widget.AppCompatButton-->
+    <!--android:layout_marginTop="150dp"-->
+    <!--android:background="@drawable/mybutton"-->
+    <!--android:id="@+id/btnSubmit"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:fontFamily="sans-serif"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Continue"-->
+    <!--/>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

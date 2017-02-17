@@ -1,0 +1,483 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context="com.kencloud.partner.user.Fragment_Company.SecondFragment">
+<FrameLayout
+    android:id="@+id/content_frame2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    </FrameLayout>
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/layoutSwipe"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="visible">-->
+    <ScrollView
+        android:layout_marginTop="45dp"
+        android:fadeScrollbars="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Applicant Company Profile"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/blue"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="9dp"
+        android:hint="Name of the Company"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:background="@drawable/edt_bg_selector"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+       <TextView
+           android:layout_marginTop="18dp"
+           android:layout_alignParentLeft="true"
+           android:layout_width="1dp"
+           android:layout_height="25dp"
+           android:background="@color/darkred"/>
+
+   </RelativeLayout>
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/company_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Type"
+        android:textSize="14sp"
+        android:drawablePadding="9dp"
+        app:met_floatingLabel="normal"
+        android:textColorHint="@color/dark_grey"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Information"
+            android:textSize="@dimen/text_large_head"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="+   Add New Address"
+            android:id="@+id/add_new_address"
+            android:padding="10dp"
+            android:textSize="@dimen/text_large_head"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:background="@color/light_grey"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+<TextView
+    android:layout_below="@+id/recycler_view"
+    android:id="@+id/viewMore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="View More"
+    android:textStyle="italic"
+    android:gravity="right"
+    android:textColor="@color/colorAccent"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+
+        android:drawablePadding="9dp"
+        android:id="@+id/incpdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edt_bg_selector"
+        android:hint="Incorporated On"
+        android:layout_marginTop="7dp"
+        android:drawableRight="@drawable/ic_calendar"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+    <TextView
+        android:layout_marginTop="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="@color/darkred"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+android:id="@+id/phone"
+        android:drawablePadding="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Phone"
+        android:background="@drawable/edt_bg_selector"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="phone"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/darkred"/>
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:id="@+id/mobile"
+        android:layout_height="50dp"
+        android:hint="Mobile"
+        android:background="@drawable/edt_bg_selector"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="phone"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:drawablePadding="9dp"
+        android:id="@+id/email"
+        android:layout_height="50dp"
+        android:hint="Email ID"
+        android:background="@drawable/edt_bg_selector"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/darkred"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/board_directors"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edt_bg_selector"
+        android:hint="No of Board of Directors"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="number"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/website"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Website"
+        android:background="@drawable/edt_bg_selector"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/employees_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="No. of Employee"
+        android:background="@drawable/edt_bg_selector"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="number"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/PAN"
+        android:layout_width="match_parent"
+        android:drawablePadding="9dp"
+        android:layout_height="50dp"
+        android:hint="Pan No."
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:background="@drawable/edt_bg_selector"
+        android:textSize="@dimen/text_large_head"/>
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/darkred"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/annual_turnover"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Annual Turnover"
+        android:background="@drawable/edt_bg_selector"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/darkred"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/TIN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="TIN No"
+        android:background="@drawable/edt_bg_selector"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="number"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/TAX"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Service Tax Number"
+        android:background="@drawable/edt_bg_selector"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="number"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/CIN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="CIN No."
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="number"
+        android:background="@drawable/edt_bg_selector"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/TAN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="TAN No."
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="number"
+        android:textColorHint="@color/dark_grey"
+        android:background="@drawable/edt_bg_selector"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+    <!--<android.support.v7.widget.AppCompatSpinner-->
+        <!--android:id="@+id/company_type"-->
+        <!--style="@style/Widget.AppCompat.Spinner.Underlined"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp" />-->
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Company Contact"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-condensed"
+    android:textColor="@color/black"
+    />
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/contact_designation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact Designation"
+        android:textSize="14sp"
+        android:drawablePadding="9dp"
+        app:met_floatingLabel="normal"
+        android:textColorHint="@color/dark_grey"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="5dp"
+        android:background="@color/white"
+        />
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="9dp"
+        android:hint="Conatct Name"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:background="@drawable/edt_bg_selector"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:drawablePadding="9dp"
+            android:id="@+id/contact_email"
+            android:layout_height="50dp"
+            android:hint="Email ID"
+            android:background="@drawable/edt_bg_selector"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/dark_grey"
+            android:singleLine="true"
+            android:textSize="@dimen/text_large_head"/>
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="@color/darkred"/>
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:id="@+id/contact_mobile"
+        android:layout_height="50dp"
+        android:hint="Mobile"
+        android:background="@drawable/edt_bg_selector"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="phone"
+        android:textColorHint="@color/dark_grey"
+        android:singleLine="true"
+        android:textSize="@dimen/text_large_head"/>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@drawable/mybutton"
+            android:layout_weight="0.50"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:background="@drawable/mybutton"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+</LinearLayout>
+
+    </ScrollView>
+<!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</RelativeLayout>

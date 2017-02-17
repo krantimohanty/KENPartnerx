@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float" />
+        <attr name="alpha_factor" format="float" />
+        <attr name="inner_parallax_factor" format="float" />
+        <attr name="parallax_views_num" format="integer" />
+        <attr name="circular_parallax" format="boolean" />
+    </declare-styleable>
+
+    <!--View transition-->
+    <declare-styleable name="PlayTransition">
+        <attr name="colorCT" format="color" />
+    </declare-styleable>
+
+    <!--WebView-->
+    <declare-styleable name="app">
+        <attr name="allow_content_access" format="boolean" />
+        <attr name="allow_file_access" format="boolean" />
+        <attr name="allow_file_access_from_file_urls" format="boolean" />
+        <attr name="allow_universal_access_from_file_urls" format="boolean" />
+        <attr name="app_cache_enabled" format="boolean" />
+        <attr name="block_network_image" format="boolean" />
+        <attr name="block_network_loads" format="boolean" />
+        <attr name="geolocation_enabled" format="boolean" />
+        <attr name="java_script_can_open_windows_automatically" format="boolean" />
+        <attr name="loads_images_automatically" format="boolean" />
+        <attr name="media_playback_requires_user_gesture" format="boolean" />
+        <attr name="support_multiple_windows" format="boolean" />
+
+        <attr name="java_script_enabled" format="boolean" />
+        <attr name="dom_storage_enabled" format="boolean" />
+        <attr name="database_enabled" format="boolean" />
+        <attr name="save_form_data" format="boolean" />
+        <attr name="cache_mode">
+            <enum name="load_default" value="-1" />
+        </attr>
+        <attr name="need_initial_focus" format="boolean" />
+        <attr name="built_in_zoom_controls" format="boolean" />
+        <attr name="display_zoom_controls" format="boolean" />
+        <attr name="support_zoom" format="boolean" />
+        <attr name="use_wide_view_port" format="boolean" />
+        <attr name="load_with_overview_mode" format="boolean" />
+        <attr name="scroll_bar_style">
+            <enum name="scrollbars_inside_overlay" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <!--Progress View-->
+    <declare-styleable name="DilatingDotsProgressBar">
+        <attr name="android:radius" />
+        <attr name="android:color" />
+        <attr name="dd_numDots" format="integer" />
+        <attr name="dd_scaleMultiplier" format="float" />
+        <attr name="dd_animationDuration" format="integer" />
+        <attr name="dd_horizontalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <!--Circular ImageView-->
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shadow" format="boolean" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_radius" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

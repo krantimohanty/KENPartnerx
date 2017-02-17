@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr. MK Arora"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/text_large_head"/>
+            <ImageView
+                android:id="@+id/dots"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_dots" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order no: "
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/orderNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SC-SCTL 002"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount: "
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="676786"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Mode: "
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/payment_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Online Transfer"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_head"/>
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

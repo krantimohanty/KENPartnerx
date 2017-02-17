@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KenPartner_3rdFeb_WebApi.iml" filepath="$PROJECT_DIR$/KenPartner_3rdFeb_WebApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqljdbc4-2.0/sqljdbc4-2.0.iml" filepath="$PROJECT_DIR$/sqljdbc4-2.0/sqljdbc4-2.0.iml" />
+    </modules>
+  </component>
+</project>

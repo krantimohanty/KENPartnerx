@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="55dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/personal_Information"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimaryDark"/>
+            <!--<android.support.v7.widget.AppCompatEditText-->
+                <!--android:id="@+id/appId"-->
+                <!--android:background="@drawable/edt_bg_selector"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:drawablePadding="16dp"-->
+                <!--android:fontFamily="san-serif"-->
+                <!--android:enabled="false"-->
+                <!--android:textColorHint="@color/grey"-->
+                <!--android:hint="Application ID"-->
+                <!--android:inputType="text"-->
+                <!--android:textSize="@dimen/text_head" />-->
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/name"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:hint="Applicant Name"
+                android:textColorHint="@color/grey"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head" />
+            <!--<android.support.v7.widget.AppCompatEditText-->
+                <!--android:id="@+id/date"-->
+                <!--android:background="@drawable/edt_bg_selector"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:drawablePadding="16dp"-->
+                <!--android:fontFamily="san-serif"-->
+                <!--android:hint="Date Created"-->
+                <!--android:inputType="text"-->
+                <!--android:textColorHint="@color/grey"-->
+                <!--android:singleLine="true"-->
+                <!--android:textSize="@dimen/text_head" />-->
+            <!--<android.support.v7.widget.AppCompatEditText-->
+                <!--android:id="@+id/status"-->
+                <!--android:background="@drawable/edt_bg_selector"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:drawablePadding="16dp"-->
+                <!--android:fontFamily="san-serif"-->
+                <!--android:hint="Status"-->
+                <!--android:inputType="text"-->
+                <!--android:textColorHint="@color/grey"-->
+                <!--android:singleLine="true"-->
+                <!--android:textSize="@dimen/text_head" />-->
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Date of Birth"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Nationality"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_head"/>
+                <RadioGroup
+                    android:id="@+id/nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/indian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="san-serif"
+                        android:paddingRight="24dp"
+                        android:text="Indian"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_content" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/nri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:fontFamily="san-serif"
+                        android:text="NRI"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Gender"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_head"/>
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="56dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="san-serif"
+                        android:paddingRight="32dp"
+                        android:textColor="@color/grey"
+                        android:text="Male"
+                        android:textSize="@dimen/text_content" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:fontFamily="san-serif"
+                        android:text="Female"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_content" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Marital Status"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_head"/>
+                <RadioGroup
+                    android:id="@+id/marital_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/married"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:checked="true"
+                        android:fontFamily="san-serif"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/grey"
+                        android:text="Married"
+                        android:textSize="@dimen/text_content" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:checked="false"
+                        android:fontFamily="san-serif"
+                        android:text="Single"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!--Company details-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Applicant Company Profile"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Name of the Company"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:background="@drawable/edt_bg_selector"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registered Address"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/grey"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Address"
+                    android:id="@+id/add_new_address"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/grey"
+                    />
+
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_view">
+
+            </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/incpdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edt_bg_selector"
+                android:hint="Incorporated On"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="phone"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/phone"
+                android:layout_height="50dp"
+                android:hint="Cellular"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="phone"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:id="@+id/email"
+                android:layout_height="50dp"
+                android:hint="Email ID"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edt_bg_selector"
+                android:hint="No of Board of Directors"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="number"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Website"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="No. of Employee"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/edt_bg_selector"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="number"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Pan No."
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:background="@drawable/edt_bg_selector"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Annual Turnover"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <!--<android.support.v7.widget.AppCompatCheckBox-->
+            <!--android:id="@+id/nursery"-->
+            <!--android:textColor="@color/grey"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:fontFamily="san-serif"-->
+            <!--android:text="TIN No"-->
+            <!--android:textSize="@dimen/text_small"-->
+            <!--android:checked="false" />-->
+
+            <!--<android.support.v7.widget.AppCompatCheckBox-->
+            <!--android:id="@+id/creche"-->
+            <!--android:textColor="@color/grey"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:fontFamily="san-serif"-->
+            <!--android:text="Service Tax No."-->
+            <!--android:textSize="@dimen/text_small" />-->
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="TIN No"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Service Tax Number"
+                android:background="@drawable/edt_bg_selector"
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="CIN No."
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:background="@drawable/edt_bg_selector"
+                android:textColorHint="@color/grey"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="TAN No."
+                android:layout_marginTop="7dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="san-serif"
+                android:inputType="text"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/edt_bg_selector"
+                android:singleLine="true"
+                android:textSize="@dimen/text_head"/>
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/company_type"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:entries="@array/company_type"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:background="@drawable/mybutton"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

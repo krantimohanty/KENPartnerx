@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.kencloud.partner.user.Feedback">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:contentInsetLeft="0dp"
+        app:elevation="6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Name"
+                    android:background="@drawable/edt_bg_selector"
+                    android:layout_marginTop="7dp"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="san-serif"
+                    android:inputType="text"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/text_head"/>
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Phone Number"
+                    android:background="@drawable/edt_bg_selector"
+                    android:layout_marginTop="7dp"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="san-serif"
+                    android:inputType="phone"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/text_head"/>
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Email Id"
+                    android:background="@drawable/edt_bg_selector"
+                    android:layout_marginTop="7dp"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="san-serif"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/text_head"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="san-serif"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Help us make our product better for you!!"/>
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Choose a topic for your comment"
+                    android:textSize="14sp"
+                    android:background="@color/white"
+                    app:met_floatingLabel="normal"
+                    android:textColorHint="#CFD8DC"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="san-serif"
+                    android:paddingTop="10dp"
+                    />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="Tell us what you think!!!"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="san-serif"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textColorHint="@color/dark_grey"
+                    android:textSize="@dimen/text_head"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="san-serif"
+                    android:textColor="@color/cardview_dark_background"
+                    android:text="What was your primary purpose for today's visit"/>
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Choose a topic for your comment"
+                    android:textSize="14sp"
+                    android:background="@color/white"
+                    app:met_floatingLabel="normal"
+                    android:textColorHint="#CFD8DC"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="san-serif"
+                    android:layout_marginTop="10dp"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="san-serif"
+                    android:textColor="@color/cardview_dark_background"
+                    android:text="Please choose one"/>
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please choose one"
+                    android:textSize="14sp"
+                    android:background="@color/white"
+                    app:met_floatingLabel="normal"
+                    android:textColorHint="#CFD8DC"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="san-serif"
+                    android:layout_marginTop="10dp"
+                    />
+                <android.support.v7.widget.AppCompatButton
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Send Feedback"
+                android:textColor="@color/white"
+                android:background="@drawable/mybutton"/>
+</LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>

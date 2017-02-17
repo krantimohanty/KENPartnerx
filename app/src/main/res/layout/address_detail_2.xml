@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company Address(Code)"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_large_head"/>
+                <ImageView
+                    android:id="@+id/dots"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_dots" />
+            </RelativeLayout>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address 1"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/text_head"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/address2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address 2"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/text_head"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City ,"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_head"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" State ,"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_head"/>
+            </LinearLayout>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Country ,"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_head"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Pin"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/text_head"/>
+
+            <!--<android.support.v7.widget.AppCompatTextView-->
+                <!--android:id="@+id/phno"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Phone Number"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textSize="@dimen/text_head"/>-->
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

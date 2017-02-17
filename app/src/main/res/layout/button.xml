@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_above="@+id/tabs_c"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:background="@drawable/mybutton"/>
+</LinearLayout>

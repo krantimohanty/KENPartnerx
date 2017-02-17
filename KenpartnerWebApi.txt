@@ -1,0 +1,19 @@
+(Personal Information) -POST and GET
+
+http://kenmasterapi.azurewebsites.net/api/CompanyPersonalInformation
+
+(Address Information)- POST and GET
+
+http://kenmasterapi.azurewebsites.net/api/CompanyAddressInformation
+
+(Applicant Company Profile & Company Contact)-  POST and GET
+
+http://kenmasterapi.azurewebsites.net/api/PartnerCompanyProfile
+
+(Get a perticular item)
+ 
+http://kenmasterapi.azurewebsites.net/api/PartnerCompanyProfile/1 
+
+( Get and post for individual personal information)
+
+http://kenmasterapi.azurewebsites.net/api/ApplicationPersonalInformation 

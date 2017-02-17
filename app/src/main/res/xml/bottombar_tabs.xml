@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+<tab
+    id="@+id/personal_info"
+    icon="@drawable/user"
+    title="Personal Information"
+    font="san_serif"
+    inActiveColor="#2196F3"
+    activeColor="#f15a29"
+    barColorWhenSelected="#FFFFFF"
+    badgeBackgroundColor="#565759"/>
+
+<tab
+id="@+id/company_info"
+    icon="@drawable/company"
+title="Company Profile"
+inActiveColor="#2196F3"
+activeColor="#f15a29"
+barColorWhenSelected="#FFFFFF"
+badgeBackgroundColor="#565759"/>
+<tab
+id="@+id/bank_details"
+    icon="@drawable/bank_details"
+title="Bank Details"
+inActiveColor="#2196F3"
+activeColor="#f15a29"
+barColorWhenSelected="#FFFFFF"
+badgeBackgroundColor="#565759"/>
+<tab
+id="@+id/operation_details"
+    icon="@drawable/operator"
+title="Operation Details"
+inActiveColor="#2196F3"
+activeColor="#f15a29"
+barColorWhenSelected="#FFFFFF"
+badgeBackgroundColor="#565759"/>
+</tabs>

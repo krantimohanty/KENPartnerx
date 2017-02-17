@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/personal_info"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="Personal"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/contact"
+        android:enabled="true"
+        android:icon="@drawable/contact"
+        android:title="Contact"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bank_details"
+        android:enabled="true"
+        android:icon="@drawable/bankdetails"
+        android:title="BankDetails"
+        app:showAsAction="ifRoom" />
+</menu>

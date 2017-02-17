@@ -1,0 +1,5 @@
+Azure Deployment Credentials
+
+Username : kencloudhost_mobile
+
+password : Kenpartner@2016

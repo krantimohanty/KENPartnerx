@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="8dp"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="@color/dark_grey"
+        android:id="@+id/phoneType"
+        android:text="Cellular"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textColor="@color/dark_grey"
+        android:textSize="16dp"
+        android:id="@+id/phoneNo"
+        android:text="+91 9873375544"
+        android:layout_toRightOf="@id/phoneType"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_toRightOf="@id/phoneNo"
+            android:id="@+id/edit"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@drawable/edit" />
+        <ImageView
+            android:layout_toRightOf="@id/edit"
+            android:id="@+id/delete"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete_icon" />
+        </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
